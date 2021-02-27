@@ -15,14 +15,22 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+function addRandomAvatarQuote() {
+  const quotes =
+      ['Failure is only the opportunity to try again, only more wisely this time',
+       'Pride is not the opposite of shame but its source', 
+       'There is nothing wrong with letting the people who love you help you', 
+       'My cabbages!!',
+       'Step aside, filth',
+       'Sometimes life is like this tunnel. You can’t always see the light at the end of the tunnel, but if you keep moving, you will come to a better place',
+       'It’s easy to do nothing, it’s hard to forgive',
+       'Life happens wherever you are, whether you make it or not' 
+    ];
 
   // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  const quote = quotes[Math.floor(Math.random() * quotes.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const quoteContainer = document.getElementById('quote-container');
+  quoteContainer.innerText = quote;
 }
